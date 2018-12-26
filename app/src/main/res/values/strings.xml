@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Profile</string>
+    <string name="background">background</string>
+    <string name="user">user</string>
+    <string name="merfix_anderson">Merfix Anderson</string>
+    <string name="bonus">Bonus</string>
+    <string name="cash">Cash</string>
+</resources>

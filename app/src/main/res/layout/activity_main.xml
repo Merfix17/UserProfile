@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="-330dp"
+        android:contentDescription="@string/background"
+        app:srcCompat="@drawable/background" />
+
+    <ImageView
+        android:id="@+id/profile"
+        android:layout_width="119dp"
+        android:layout_height="102dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:contentDescription="@string/user"
+        app:srcCompat="@drawable/user" />
+
+    <TextView
+        android:id="@+id/prof_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="131dp"
+        android:textColor="@color/colorBack"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/viewBonus"
+        android:layout_width="82dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/prof_name"
+        android:layout_alignRight="@+id/prof_name"
+        android:layout_alignTop="@+id/viewCash"
+        android:text="@string/cash"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/resBonus"
+        android:layout_width="82dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/prof_name"
+        android:layout_alignRight="@+id/prof_name"
+        android:layout_alignTop="@+id/resCash"
+        android:text=""
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/viewCash"
+        android:layout_width="82dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/prof_name"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/prof_name"
+        android:layout_marginTop="170dp"
+        android:text="@string/bonus"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/resCash"
+        android:layout_width="82dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/prof_name"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/prof_name"
+        android:layout_marginTop="190dp"
+        android:text=""
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/line"
+        android:layout_width="2dp"
+        android:layout_height="43dp"
+        android:layout_below="@+id/prof_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        tools:background="#ffffff" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="231dp"
+        android:text="Name:"
+        android:textSize="18sp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="12dp" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="365dp"
+        android:layout_height="29dp"
+        android:layout_centerVertical="true"
+        android:inputType="textPersonName"
+        android:layout_below="@id/name"
+        android:layout_alignStart="@id/name"
+        android:layout_alignLeft="@id/name"
+        tools:ignore="LabelFor" />
+
+
+    <TextView
+        android:id="@+id/cash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/name"
+        android:layout_below="@+id/editText1"
+        android:text="Cash:"
+        android:textSize="18sp"
+        android:layout_alignLeft="@+id/name" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="365dp"
+        android:layout_height="29dp"
+        android:layout_centerVertical="true"
+        android:inputType="textPersonName"
+        android:layout_below="@id/cash"
+        android:layout_alignStart="@id/cash"
+        android:layout_alignLeft="@id/cash"
+        tools:ignore="LabelFor" />
+
+
+    <TextView
+        android:id="@+id/bonus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/name"
+        android:layout_below="@+id/editText2"
+        android:text="Bonus:"
+        android:textSize="18sp"
+        android:layout_alignLeft="@+id/editText2" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="365dp"
+        android:layout_height="29dp"
+        android:layout_centerVertical="true"
+        android:inputType="textPersonName"
+        android:layout_below="@id/bonus"
+        android:layout_alignStart="@id/bonus"
+        android:layout_alignLeft="@id/bonus"
+        tools:ignore="LabelFor" />
+
+    <Button
+        android:id="@+id/ok"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="39dp"
+        android:text="OK" />
+
+
+</RelativeLayout>
